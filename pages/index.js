@@ -27,21 +27,21 @@ export default function Home() {
       </div>
       <div className={styles.firstCard}>
         {data.map((dat) => (
-          <div className={styles.mainCard}>
+          <div className={styles.mainCard} key={dat.id}>
             <div className={styles.card}>
               <div>
-                {/* <Image
+                <Image
                   src={dat.image.url}
                   alt="this is a image"
                   width={300}
                   height={200}
-                /> */}
-                <img
+                />
+                {/* <img
                   src={dat.image.url}
                   alt="This was a image"
                   width="300"
                   height="200"
-                />
+                /> */}
                 <a
                   href="#"
                   onClick={(e) => {
